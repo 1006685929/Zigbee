@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical">
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#0000"
+            android:text="历史数据" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textAlignment="center"
+                android:text="时间"
+                android:textSize="40px"
+                android:layout_width="150dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:text="温度"
+                android:textAlignment="center"
+                android:textSize="40px" />
+
+            <TextView
+                android:textAlignment="center"
+                android:text="湿度"
+                android:textSize="40px"
+                android:layout_width="80dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:textAlignment="center"
+                android:text="透光度"
+                android:textSize="40px"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="220dp">
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#cc00ff"
+            android:textSize="13sp" />
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical">
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#0000"
+            android:text="异常数据" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textAlignment="center"
+                android:text="时间"
+                android:textSize="40px"
+                android:layout_width="140dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:textAlignment="center"
+                android:text="温度"
+                android:textSize="40px"
+                android:layout_width="60dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:textAlignment="center"
+                android:text="透光度"
+                android:textSize="40px"
+                android:layout_width="60dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:textAlignment="center"
+                android:text="异常信息"
+                android:textSize="40px"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="220dp">
+
+        <TextView
+            android:id="@+id/tv_error_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#cc00ff"
+            android:textSize="13sp" />
+    </ScrollView>
+
+</LinearLayout>
